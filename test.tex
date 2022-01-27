@@ -1,7 +1,87 @@
 \documentclass{fancycv}
 
+\usepackage{fontspec}
+\usepackage{pbox}
+
+\setmainfont[
+	Path = fonts/,
+	UprightFont = *-regular,
+	BoldFont = *-semibold]
+{bitter}
+\newfontface\slimjim{bitter-light.ttf}[Path = fonts/]
+\newfontface\heads{Bebas Neue}
+
+\newlength{\sidebarwidth}
+\setlength{\sidebarwidth}{5.2cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
 \begin{document}
 
-Here is some text. Here is some more text. What size is my paper, I do not know... If I write some more does it go on to a new line, and what happens if I change the text width?
+\pbox{0.7\textwidth}{
+{\fontsize{60}{75}\heads Sam Bell}\\
+{\fontsize{32}{34}\heads Biomodeler}}\hfill\pbox{0.3\textwidth}{
+\slimjim Val-de-Marne, France.\\
++33~6~10~76~79~48\\
+sambell912@gmail.com}
+
+\vspace{0.7cm}
+
+\raggedright Theoretical biophysicist specialised in stochastic systems and critical phenomena. Strong ability to translate problems into mathematical models, investigate these models, and communicate the results to a wider audience.
+
+\vspace{1cm}
+
+\begin{minipage}[t]{\sidebarwidth}
+{\fontsize{32}{40}\fontspec{Bebas Neue} Skills}
+
+\vspace{12cm}
+
+{{\fontsize{32}{40}\fontspec{Bebas Neue} Languages}
+
+\vspace{0.7cm}
+
+\raggedright \textbf{English} \hfill {\slimjim Native speaker}\\
+\vspace{0.5cm}
+\raggedright \textbf{French} \hfill {\slimjim B2/C1}\\
+\vspace{0.5cm}
+\raggedright \textbf{Spanish} \hfill {\slimjim \pbox[t]{0.7\sidebarwidth}{\raggedleft Semi-professional proficiency}}
+}
+\end{minipage}\hspace{1.5cm}\begin{minipage}[t]{10.5cm}\setlength{\parskip}{0.5em}
+{\fontsize{32}{40}\fontspec{Bebas Neue} Experience}
+
+\vspace{0.7cm}
+
+\textbf{Post-doctoral researcher},\hfill Jun 2019--Present\\
+{\slimjim Institut Curie, Paris, France.}
+
+Working on models of active matter and critical phenomena, specifically for the influence of external fields on epithelial monolayers.
+
+Let's try another paragraph and see if this one works or not.
+
+\vspace{0.7cm}
+
+\textbf{PhD, Activation problems in biology},\hfill Oct 2015--Jun 2019\\
+{\slimjim Cavendish Laboratory, University of Cambridge, UK.}
+
+\begin{enumerate}
+\item Published 8 research papers
+\item What else did I do?
+\end{enumerate}
+
+\vspace{7cm}
+
+{\fontsize{32}{40}\fontspec{Bebas Neue} Education}
+
+\vspace{0.7cm}
+
+\textbf{MSci, Experimental \& Theoretical Physics},\hfill Oct 2014--Jun 2015\\
+{\slimjim Trinity College, University of Cambridge, UK.}
+
+\vspace{0.7cm}
+
+\textbf{BA, Natural Sciences (ETP)},\hfill Oct 2011--Jun 2014\\
+{\slimjim Trinity College, University of Cambridge, UK.}
+\end{minipage}\\
 
 \end{document}
