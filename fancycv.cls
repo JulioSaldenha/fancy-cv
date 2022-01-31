@@ -44,11 +44,14 @@
 \usepackage{fontspec}
 
 \setmainfont[
-	Path = fonts/,
-	UprightFont = *-regular,
-	BoldFont = *-semibold]
-{bitter}
-\newfontface\light{bitter-light.ttf}[Path = fonts/]
+	BoldFont = Bitter Pro SemiBold,
+	Ligatures = Common,
+	Numbers = OldStyle,
+	SmallCapsFeatures = {Letters=SmallCaps}]
+{Bitter Pro}
+\newfontface\light{Bitter Pro Light}[
+	SmallCapsFont = Bitter Pro Light,
+	SmallCapsFeatures = {Letters=SmallCaps}]
 \newfontface\heads{Bebas Neue}
 
 % Setting up variable names for the section and name font sizes. I am
